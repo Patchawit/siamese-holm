@@ -5,7 +5,7 @@ import bg from "../img/BG.png";
 export default function formregis() {
     return (
         <div className='regis'>
-            <img src={bg} />
+            <img src={bg}/>
             <p>เตรียมพบบ้านเดี่ยว-ทาวน์โฮม โครงการใหม่<br />ติดถนนใหญ่ใกล้รถไฟฟ้า และฟิวเจอร์พาร์ครังสิต เพียง 4 นาที</p>
             <h1>ลงทะเบียนเพื่อรับสิทธิพิเศษ</h1>
             <form className='form'>

@@ -8,14 +8,18 @@
     width: 43vw;
     right: -0.5vw;
     top: 46vw;
+
 }
 
 .regis p{
     font-size: 2vw;
+    font-family: 'sukhumvit_setbold';
+    
 }
 
 .regis h1{
     font-size: 3vw;
+    font-family: 'sukhumvit_setbold';
 }
 
 .regis button{
@@ -23,9 +27,10 @@
     background-color: #053d53 ;
     margin-top: 5vw;
     margin-bottom: 5vw;
-    padding: 0.5vw 2.5vw;
+    padding: 0.5vw 3vw;
     font-size: 1.5vw;
     border: 0vw;
+    font-family: 'sukhumvit_setbold';
     
 }
 
@@ -36,6 +41,7 @@
     border-bottom: 0.13vw solid #053d53;
     margin: 2vw 1.5vw 3vw 1.5vw;
     color: #053d53;
+    font-family: 'sukhumvit_setbold';
 
 }
 

@@ -6,11 +6,10 @@
 .info{
     display: flex;
     justify-content: space-between;
-    padding: 5vw 0vw 3vw 5vw;
+    padding: 5vw 0vw 4vw 5vw;
     border-bottom: 0.1vw solid white;
     margin-left: 7vw;
     margin-right: 7vw;
-    margin-bottom: 1vw;
 }
 
 .map img{
@@ -20,12 +19,14 @@
 }
 
 .desc h1{
-    font-size: 2.5vw;
+    font-size: 2.4vw;
+    font-family: 'sukhumvit_setbold';
 }
 
 .desc p {
     font-size: 1vw;
-    margin-bottom: 3vw;
+    margin-bottom: 1.5vw;
+    font-family: 'sukhumvit_setbold';
 }
 
 .desc ul{
@@ -34,6 +35,7 @@
 
 .desc li{
     font-size: 1vw;
+    font-family: 'sukhumvit_setbold';
 }
 
 .desc button {
@@ -43,6 +45,7 @@
     background-color: #053d53;
     padding: 0.5vw 1.5vw;
     margin-right: 1vw;
+    font-family: 'sukhumvit_setbold';
 }
 #googlemap{
     background-color: white;
@@ -65,15 +68,21 @@
     display: flex;
 }
 .copyright p{
-    margin-top: 1.5vw;
+    margin-top: 1.7vw;
     font-size: 1vw;
     margin-right: 1.5vw;
+    font-family: 'sukhumvit_setbold';
 }
 .copyright img{
     width: 1.7vw;
     height: 1.7vw;
-    margin: 1.5vw 1vw 0 0;
+    margin: 1.7vw 1vw 0 0;
 }
+
+.copyright h1{
+    font-family: 'sukhumvit_setbold';
+}
+
 
 .border{
     padding-right: 1vw;
