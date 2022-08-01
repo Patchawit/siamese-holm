@@ -1,0 +1,19 @@
+.regis{
+    color: #2F3D58;
+    text-align: center;
+}
+
+.regis p{
+    font-size: 2vw;
+}
+
+.regis h1{
+    font-size: 3vw;
+}
+
+.regis button{
+    color: white;
+    background-color: #2F3D58 ;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}

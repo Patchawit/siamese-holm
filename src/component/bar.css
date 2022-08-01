@@ -1,0 +1,33 @@
+.headbar{
+    height: 7vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 5vw 0 5vw;
+}
+
+.headbar img{
+    width: 22vw;
+    height: 6vw;
+}
+
+.phone{
+    display: flex;
+}
+.phone img{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-top: 2.5vw;
+    margin-right: 2vw;
+}
+.phone p{
+    margin-top: 2vw;
+    color: #2F3D58;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.banner {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 2vw;
+}
