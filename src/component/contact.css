@@ -1,0 +1,81 @@
+.contact{
+    background-color: #053d53;
+    color: white;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 5vw 0vw 3vw 5vw;
+    border-bottom: 0.1vw solid white;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-bottom: 1vw;
+}
+
+.map img{
+    margin-top: 2vw;
+    width: 37vw;
+    height: 24vw;
+}
+
+.desc h1{
+    font-size: 2.5vw;
+}
+
+.desc p {
+    font-size: 1vw;
+    margin-bottom: 3vw;
+}
+
+.desc ul{
+    margin-bottom: 4vw;
+}
+
+.desc li{
+    font-size: 1vw;
+}
+
+.desc button {
+    font-size: 1.2vw;
+    border: 0.1vw solid white;
+    color: white;
+    background-color: #053d53;
+    padding: 0.5vw 1.5vw;
+    margin-right: 1vw;
+}
+#googlemap{
+    background-color: white;
+    color: #053d53;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    padding-bottom: 1vw;
+}
+
+.foot img{
+    width: 15vw;
+}
+
+.copyright{
+    display: flex;
+}
+.copyright p{
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    margin-right: 1.5vw;
+}
+.copyright img{
+    width: 1.7vw;
+    height: 1.7vw;
+    margin: 1.5vw 1vw 0 0;
+}
+
+.border{
+    padding-right: 1vw;
+    border-right: 0.1vw solid white;
+}

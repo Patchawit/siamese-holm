@@ -20,14 +20,14 @@
     margin-right: 2vw;
 }
 .phone p{
-    margin-top: 2vw;
-    color: #2F3D58;
+    margin-top: 1.5vw;
+    color: #053d53;
     font-size: 3vw;
     font-weight: bold;
 }
 
 .banner {
-    width: 100vw;
+    width: 100%;
     height: auto;
     margin-bottom: 2vw;
 }

@@ -1,6 +1,13 @@
 .regis{
-    color: #2F3D58;
+    color: #053d53;
     text-align: center;
+
+}
+.regis img{
+    position: absolute;
+    width: 43vw;
+    right: -0.5vw;
+    top: 46vw;
 }
 
 .regis p{
@@ -13,7 +20,28 @@
 
 .regis button{
     color: white;
-    background-color: #2F3D58 ;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    background-color: #053d53 ;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    padding: 0.5vw 2.5vw;
+    font-size: 1.5vw;
+    border: 0vw;
+    
 }
+
+.form input,.form select{
+    width: 30vw;
+    font-size: 1.5vw;
+    border: 0;
+    border-bottom: 0.13vw solid #053d53;
+    margin: 2vw 1.5vw 3vw 1.5vw;
+    color: #053d53;
+
+}
+
+.form input::placeholder {
+    color: #053d53;
+}
+
+
+

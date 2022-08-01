@@ -1,4 +1,4 @@
-import './bar.css';
+import './navbar.css';
 import logo from "../img/LOGO.png";
 import call from "../img/call.png";
 import ban from "../img/banner.jpg";
