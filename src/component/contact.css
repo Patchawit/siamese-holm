@@ -73,7 +73,7 @@
     display: flex;
 }
 .copyright p{
-    margin-top: 2.5vw;
+    margin-top: 2.3vw;
     font-size: 1.1vw;
     margin-right: 1vw;
     font-family: 'sukhumvit_setbold';
@@ -81,12 +81,12 @@
 .copyright img{
     width: 2vw;
     height: 2vw;
-    margin: 2.4vw 1vw 0 0;
+    margin: 2vw 1vw 0 0;
 }
 
 .copyright h1{
     font-family: 'sukhumvit_setbold';
-    font-size: 2vw;
+    font-size: 1.7vw;
     padding-top: 2vw;
 }
 
