@@ -35,11 +35,6 @@
     font-family: 'sukhumvit_setbold';
     
 }
-.textinput{
-
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
 
 .textinput input{
     width: 30vw;
@@ -51,11 +46,7 @@
     font-family: 'sukhumvit_setbold';
 }
 
-.opinput{
-    padding-left: 12vw;
-    padding-right: 8vw;
 
-}
 .opinput select{
     width: 30vw;
     font-size: 1.2vw;
@@ -71,10 +62,5 @@
     color: #053d53;
 }
 
-@media only screen and (max-width: 575px){
-    .opinput{
-        padding-left: 32vw;
-    
-    }
-}
+
 

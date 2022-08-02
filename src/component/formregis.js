@@ -14,18 +14,18 @@ export default function formregis() {
             <form>
                 <div className='container'>
                     <div className="row textinput">
-                        <div className="col-sm-6 col-xs-12">
+                        <div className="col-sm-6 col-12">
                             <input type="text" placeholder='ชื่อ*'></input>
                         </div>
-                        <div className="col-sm-6 col-xs-12">
+                        <div className="col-sm-6 col-12">
                             <input type="text" placeholder='นามสกุล*'></input>
                         </div>
                     </div>
                     <div className="row textinput">
-                        <div className="col-sm-6 col-xs-12">
+                        <div className="col-sm-6 col-12">
                             <input type="text" placeholder='เบอร์โทรศัพท์*'></input>
                         </div>
-                        <div className="col-sm-6 col-xs-12">
+                        <div className="col-sm-6 col-12">
                             <input type="text" placeholder='อีเมล'></input>
                         </div>
                     </div>
@@ -33,15 +33,15 @@ export default function formregis() {
 
                 <div className='container'>
                     <div className="row opinput">
-                        <div className="col-sm-6 col-xs-12">
-                            <Form.Select placeholder='แบบบ้านที่สนใจ*'>
+                        <div className="col-sm-6 col-12">
+                            <select placeholder='แบบบ้านที่สนใจ*'>
                                 <option value="0">แบบบ้านที่สนใจ*</option>
-                            </Form.Select>
+                            </select>
                         </div>
-                        <div className="col-sm-6 col-xs-12">
-                            <Form.Select placeholder='งบประมาณ*'>
+                        <div className="col-sm-6 col-12">
+                            <select placeholder='งบประมาณ*'>
                                 <option value="0">งบประมาณ*</option>
-                            </Form.Select>
+                            </select>
                         </div>
                     </div>
                 </div>
