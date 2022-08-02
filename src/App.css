@@ -32,3 +32,13 @@ body{
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'sukhumvit_setthin';
+    src: url('Fonts/sukhumvit_set-webfont.woff2') format('woff2'),
+         url('Fonts/sukhumvit_set-webfont.woff') format('woff'),
+         url('Fonts/sukhumvit_set-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
