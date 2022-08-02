@@ -35,28 +35,46 @@
     font-family: 'sukhumvit_setbold';
     
 }
+.textinput{
 
-.form input,.form select{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.textinput input{
     width: 30vw;
     font-size: 1.2vw;
     border: 0;
     border-bottom: 0.13vw solid #053d53;
-    margin: 2vw 1.5vw 3vw 1.5vw;
+    margin-top:5vw;
     color: #053d53;
     font-family: 'sukhumvit_setbold';
-
 }
 
-.selectop{
-    display: flex;
-    justify-content: center;
+.opinput{
+    padding-left: 12vw;
+    padding-right: 8vw;
+
+}
+.opinput select{
+    width: 30vw;
+    font-size: 1.2vw;
+    border: 0;
+    border-bottom: 0.13vw solid #053d53;
+    margin-top:5vw;
+    color: #053d53;
+    font-family: 'sukhumvit_setbold';
 }
 
 
-
-.form input::placeholder {
+.textinput input::placeholder {
     color: #053d53;
 }
 
-
+@media only screen and (max-width: 575px){
+    .opinput{
+        padding-left: 32vw;
+    
+    }
+}
 
