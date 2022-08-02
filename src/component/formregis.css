@@ -7,19 +7,21 @@
     position: absolute;
     width: 43vw;
     right: -0.5vw;
-    top: 46vw;
+    top: 46.5vw;
 
 }
 
 .regis p{
     font-size: 2vw;
     font-family: 'sukhumvit_setbold';
+    margin-bottom: 4vw;
     
 }
 
 .regis h1{
     font-size: 3vw;
     font-family: 'sukhumvit_setbold';
+    margin-bottom: 2vw;
 }
 
 .regis button{

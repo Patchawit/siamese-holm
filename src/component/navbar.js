@@ -3,6 +3,7 @@ import logo from "../img/LOGO.png";
 import call from "../img/call.png";
 import ban from "../img/banner.jpg";
 
+
 export default function navbar() {
     return (
         <div>
@@ -13,7 +14,9 @@ export default function navbar() {
                     <p>1306</p>
                 </div>
             </div>
-            <img className='banner' src={ban} />
+
+                <img className='banner' src={ban} />
+
         </div>
     )
 }
