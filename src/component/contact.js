@@ -23,6 +23,8 @@ export default function contact() {
         document.getElementById("grapmap").style.color="white"
     }
 
+
+
     return (
         <div className='contact'>
             <div className='info'>
@@ -42,13 +44,16 @@ export default function contact() {
                 </div>
             </div>
             <div className='foot'>
-                <div>
+                <div className='logo2'>
                     <img src={logo2} />
                 </div>
                 <div className='copyright'>
                     <p>Copyright © 2019 All rights reserved.</p>
-                    <img className='border' src={fb} />
-                    <img src={call2} />
+                    <div className='ifb'>
+                    <img className='borderr' src={fb} />
+                    </div>
+                    <img className="" src={call2} />
+                    
                     <h1>1306</h1>
                 </div>
             </div>

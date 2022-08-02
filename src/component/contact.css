@@ -10,6 +10,7 @@
     border-bottom: 0.1vw solid white;
     margin-left: 7vw;
     margin-right: 7vw;
+    
 }
 
 .map img{
@@ -21,6 +22,7 @@
 .desc h1{
     font-size: 2.4vw;
     font-family: 'sukhumvit_setbold';
+    padding-top: 1.5vw;
 }
 
 .desc p {
@@ -39,7 +41,7 @@
 }
 
 .desc button {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     border: 0.1vw solid white;
     color: white;
     background-color: #053d53;
@@ -63,28 +65,37 @@
 .foot img{
     width: 15vw;
 }
+.logo2{
+    margin-top: 1vw;
+}
 
 .copyright{
     display: flex;
 }
 .copyright p{
-    margin-top: 1.7vw;
-    font-size: 1vw;
-    margin-right: 1.5vw;
+    margin-top: 2.5vw;
+    font-size: 1.1vw;
+    margin-right: 1vw;
     font-family: 'sukhumvit_setbold';
 }
 .copyright img{
-    width: 1.7vw;
-    height: 1.7vw;
-    margin: 1.7vw 1vw 0 0;
+    width: 2vw;
+    height: 2vw;
+    margin: 2.4vw 1vw 0 0;
 }
 
 .copyright h1{
     font-family: 'sukhumvit_setbold';
+    font-size: 2vw;
+    padding-top: 2vw;
 }
 
 
-.border{
+.borderr{
     padding-right: 1vw;
     border-right: 0.1vw solid white;
+}
+
+.ifb img{
+    width: 3vw;
 }
