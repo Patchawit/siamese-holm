@@ -12,7 +12,7 @@ export default function formregis() {
             <p>เตรียมพบบ้านเดี่ยว-ทาวน์โฮม โครงการใหม่<br />ติดถนนใหญ่ใกล้รถไฟฟ้า และฟิวเจอร์พาร์ครังสิต เพียง 4 นาที</p>
             <h1>ลงทะเบียนเพื่อรับสิทธิพิเศษ</h1>
             <form>
-                <div className='container-fluid' style={{width:"80vw"}}>
+                <div className='container-fluid' style={{width:"75vw"}}>
                     <div className="row textinput">
                         <div className="col-sm-6 col-12">
                             <input type="text" placeholder='ชื่อ*'></input>
@@ -31,7 +31,7 @@ export default function formregis() {
                     </div>
                 </div>
 
-                <div className='container-fluid' style={{width:"80vw"}}>
+                <div className='container-fluid' style={{width:"75vw"}}>
                     <div className="row opinput">
                         <div className="col-sm-6 col-12">
                             <select placeholder='แบบบ้านที่สนใจ*'>
