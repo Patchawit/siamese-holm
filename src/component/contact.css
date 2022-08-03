@@ -60,8 +60,8 @@
 .foot{
     display: flex;
     justify-content: space-between;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 9vw;
+    margin-right: 9vw;
     padding-bottom: 1vw;
 }
 
@@ -74,6 +74,7 @@
 
 .copyright{
     display: flex;
+    
 }
 .copyright p{
     margin-top: 2.3vw;
