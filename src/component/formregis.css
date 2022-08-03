@@ -73,11 +73,13 @@
         font-size: 1.7vw;
     }
     .regis button{
-        font-size: 3.2vw;
+        font-size: 3.5vw;
    
     }
     .regis p{
         font-size: 2.5vw;
+        padding-top: 1vw;
+        padding-bottom: 0.5vw;
         
     }
     

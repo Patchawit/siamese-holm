@@ -114,6 +114,7 @@
 @media only screen and (max-width: 575px) {
     .info {
         padding-left: 5vw;
+        padding-bottom: 9vw;
     }
 
     .map iframe {
@@ -126,17 +127,20 @@
 
     .desc button {
        
-        font-size: 2vw;
+        font-size: 3.2vw;
+        margin-left: 1vw;
+        
     }
     .btmap{
         position: absolute;
-        margin-left: 15vw; 
-        margin-top: 44vw;
+        margin-left: 4.5vw; 
+        margin-top: 45vw;
 
     }
 
     .desc h1 {
         font-size: 3.5vw;
+        padding-bottom: 1vw;
     }
 
     .desc p {
@@ -153,19 +157,21 @@
 
     .copyright h1 {
         margin-top: 3.1vw;
-        font-size: 2vw;
+        font-size: 3.5vw;
+        margin-right: 2vw;
     }
 
     .copyright img {
         margin-top: 2.6vw;
-        width: 3vw;
-        height: 3vw;
-        margin-right: 1vw;
+        width: 5vw;
+        height: 5vw;
+        margin-right: 2vw;
     }
 
     .copyright p {
-
-        margin-top: 3.3vw;
+        position: absolute;
+        margin-top: 10vw;
+        left:11vw;
         font-size: 1.4vw;
     }
 
@@ -174,9 +180,18 @@
     }
 
     .ifb img {
-        margin-top: 2.5vw;
-        width: 4.5vw;
-        height: 3.2vw
+        margin-top: 1.6vw;
+        width: 9vw;
+        height: 6vw;
+        margin-right: 2vw;
+    }
+    .foot{
+        margin-top: 0.5vw;
+        padding-bottom: 7vw;
+    }
+    .borderr {
+        padding-right: 2vw;
+    
     }
 
 }
