@@ -46,3 +46,24 @@
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 575px){
+    .headbar {
+        height: 10vw;
+        
+    }
+    .headbar img {
+        width: 30vw;
+        height: 10vw;
+    }
+    .phone img {
+        width: 5vw;
+        height: 5vw;
+
+    }
+    .phone p {    
+        font-size: 3.5vw;
+        margin-top: 2.5vw;
+
+    }
+}

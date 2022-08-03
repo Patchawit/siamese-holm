@@ -53,6 +53,7 @@
     border: 0;
     border-bottom: 0.13vw solid #053d53;
     margin-top:5vw;
+    background-color: rgba(255, 255, 255, 0);
     color: #053d53;
     font-family: 'sukhumvit_setbold';
 }
@@ -62,5 +63,30 @@
     color: #053d53;
 }
 
+@media only screen and (max-width: 575px){
+    .opinput select{
+        width: 70vw;
+        font-size: 1.7vw;      
+    }
+    .textinput input{
+        width: 70vw;
+        font-size: 1.7vw;
+    }
+    .regis button{
+        font-size: 3.2vw;
+   
+    }
+    .regis p{
+        font-size: 2.5vw;
+        
+    }
+    
+    .regis h1{
+        font-size: 4vw;
 
+    }
+    .regis img{
+        top: 49.1vw;    
+    }
+}
 
