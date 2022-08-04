@@ -92,11 +92,17 @@
     .form-label {
         left: 1vw;
         top: 5.5vw;
-        font-size: 1.5vw;
+        font-size: 1.7vw;
     }
     .form-input{
         width: 70vw;
         font-size: 1.5vw;
+    }
+    .form-input:focus ~ .form-label,
+    .form-input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+      top: 3.5vw;
+      font-size: 1.2vw;
+      left: 1vw;
     }
     .regis button{
         font-size: 3.5vw;
