@@ -11,9 +11,9 @@
 
 .map iframe {
     margin-top: 2vw;
-    width: 37vw;
-    height: 24vw;
-    margin-left: 4vw;
+    width: 43vw;
+    height: 30vw;
+    margin-left: -2vw;
 }
 
 .desc {
@@ -67,7 +67,7 @@
 }
 
 .foot img {
-    width: 15vw;
+    width: 12vw;
 }
 
 .logo2 {
@@ -80,23 +80,28 @@
 }
 
 .copyright p {
-    margin-top: 2.3vw;
-    font-size: 1.1vw;
+    margin-top: 2vw;
+    font-size: 0.9vw;
     padding-right: 1vw;
     font-family: 'sukhumvit_setbold';
 }
 
 .copyright img {
-    width: 2.2vw;
-    height: 2.3vw;
-    margin-top: 2vw;
+    width: 1.7vw;
+    height: 1.7vw;
+    margin-top: 1.6vw;
     margin-right: 1vw;
 }
 
-.copyright h1 {
+.copyright a {
     font-family: 'sukhumvit_setbold';
-    font-size: 1.7vw;
-    margin-top: 2vw;
+    font-size: 1.5vw;
+    margin-top: 1.4vw;
+    text-decoration: none;
+    color: white;
+}
+.copyright a:hover{
+    color: white;
 }
 
 
@@ -107,8 +112,9 @@
 }
 
 .ifb img {
-    width: 3.5vw;
-    height: 2.5vw
+    margin-top: 1.4vw;
+    width: 3vw;
+    height: 2vw
 }
 
 @media only screen and (max-width: 575px) {
@@ -118,11 +124,11 @@
     }
 
     .map iframe {
-        margin-left: 5vw;
+        margin-left: -9.5vw;
         margin-top: 2vw;
-        width: 65vw;
-        height: 40vw;
-        margin-bottom: 5vw;
+        width: 90vw;
+        height: 60vw;
+        margin-bottom: 3vw;
     }
 
     .desc button {
@@ -134,7 +140,7 @@
     .btmap{
         position: absolute;
         margin-left: 4.5vw; 
-        margin-top: 45vw;
+        margin-top: 65vw;
 
     }
 
@@ -155,35 +161,35 @@
         margin-bottom: 1vw;
     }
 
-    .copyright h1 {
-        margin-top: 3.1vw;
-        font-size: 3.5vw;
+    .copyright a {
+        margin-top: 2vw;
+        font-size: 3vw;
         margin-right: 2vw;
     }
 
     .copyright img {
-        margin-top: 2.6vw;
-        width: 5vw;
-        height: 5vw;
+        margin-top: 2.1vw;
+        width: 4vw;
+        height: 4vw;
         margin-right: 2vw;
     }
 
     .copyright p {
         position: absolute;
-        margin-top: 10vw;
+        margin-top: 8vw;
         left:11vw;
-        font-size: 1.4vw;
+        font-size: 1.2vw;
     }
 
     .logo2 img {
-        width: 25vw;
+        width: 22vw;
     }
 
     .ifb img {
-        margin-top: 1.6vw;
-        width: 9vw;
-        height: 6vw;
-        margin-right: 2vw;
+        margin-top: 1.2vw;
+        width: 7vw;
+        height: 5vw;
+        margin-right: 0vw;
     }
     .foot{
         margin-top: 0.5vw;

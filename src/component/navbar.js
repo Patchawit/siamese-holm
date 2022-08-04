@@ -11,7 +11,7 @@ export default function navbar() {
                 <img src={logo} />
                 <div className="phone">
                     <img src={call} />
-                    <p>1306</p>
+                    <a href="tel:1306">1306</a>
                 </div>
             </div>
 
