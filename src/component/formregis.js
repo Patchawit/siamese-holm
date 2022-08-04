@@ -1,6 +1,6 @@
 import './formregis.css';
 import bg from "../img/BG.png";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
@@ -22,6 +22,35 @@ export default function Formregis() {
         console.log(inputs);
     }
 
+    
+
+    useEffect(() => {
+
+        var subjectObject = {
+            "แบบบ้านที่สนใจ*":[],
+            "บ้านเดี่ยว": ["6-7 ล้านบาท", "7-8 ล้านบาท", "8-9 ล้านบาท", "9-10 ล้านบาท", "10-11 ล้านบาท", "11-12 ล้านบาท", "มากกว่า 12 ล้านบาท"],
+            "บ้านแฝด": ["2-3 ล้านบาท", "3-4 ล้านบาท", "4-5 ล้านบาท", "5-6 ล้านบาท", "มากกว่า 6 ล้านบาท"],
+            "ทาวน์โฮม": ["2-3 ล้านบาท", "3-4 ล้านบาท", "4-5 ล้านบาท", "5-6 ล้านบาท", "มากกว่า 6 ล้านบาท"]
+        }
+        document.querySelector('#mydesign').innerHTML = '';
+        
+        var subjectSel = document.getElementById("mydesign");
+        var topicSel = document.getElementById("mybudget");
+        for (var x in subjectObject) {
+            subjectSel.options[subjectSel.options.length] = new Option(x, x);
+            console.log("1")
+        }
+        
+        subjectSel.onchange = function () {
+            topicSel.length = 1;
+
+            for (var y in subjectObject[this.value]) {
+                topicSel.options[topicSel.options.length] = new Option(subjectObject[this.value][y], subjectObject[this.value][y]);
+            }
+        }
+
+
+    }, [])
 
 
     return (
@@ -33,15 +62,15 @@ export default function Formregis() {
                 <div className='container-fluid' style={{ width: "75vw" }}>
                     <div className="row textinput">
                         <div className="col-sm-6 col-12">
-                            <div class="form-group">                               
-                                <input className='form-input' placeholder=' ' type="text" name="firstName" onChange={handleChange}></input>
+                            <div class="form-group">
+                                <input className='form-input' placeholder=' ' autoComplete='off' required type="text" name="firstName" onChange={handleChange}></input>
                                 <label className='form-label'>ชื่อ*</label>
                             </div>
                         </div>
                         <div className="col-sm-6 col-12">
                             <div class="form-group">
-                                
-                                <input className='form-input' placeholder=' ' type="text" name="surName" onChange={handleChange}></input>
+
+                                <input className='form-input' placeholder=' ' autoComplete='off' required type="text" name="surName" onChange={handleChange}></input>
                                 <label className='form-label'>นามสกุล*</label>
                             </div>
                         </div>
@@ -49,14 +78,14 @@ export default function Formregis() {
                     <div className="row textinput">
                         <div className="col-sm-6 col-12">
                             <div class="form-group">
-                                <input className='form-input' placeholder=' ' type="text" name="number" onChange={handleChange}></input>
+                                <input className='form-input' placeholder=' ' autoComplete='off' required type="text" name="number" onChange={handleChange}></input>
                                 <label className='form-label'>เบอร์โทรศัพท์*</label>
                             </div>
                         </div>
                         <div className="col-sm-6 col-12">
-                            <div class="form-group">                               
-                                <input className='form-input' placeholder=' ' type="text" name="email" onChange={handleChange}></input>
-                                <label className='form-label'>อีเมล</label>
+                            <div class="form-group">
+                                <input className='form-input' placeholder=' ' autoComplete='off'  type="text" name="email" onChange={handleChange}></input>
+                                <label className='form-label'>อีเมล*</label>
                             </div>
                         </div>
                     </div>
@@ -65,32 +94,14 @@ export default function Formregis() {
                 <div className='container-fluid' style={{ width: "75vw" }}>
                     <div className="row opinput">
                         <div className="col-sm-6 col-12">
-                            <select id="mydesign" placeholder='แบบบ้านที่สนใจ*' name="design" onChange={handleChange}>
+                            <select id="mydesign" placeholder='แบบบ้านที่สนใจ' name="design" onChange={handleChange}>
                                 <option value="0">แบบบ้านที่สนใจ*</option>
-                                <option value="1">บ้านเดี่ยว</option>
-                                <option value="2">บ้านแฝด</option>
-                                <option value="3">ทาวน์โฮม</option>
                             </select>
+
                         </div>
                         <div className="col-sm-6 col-12">
-                            <select id="mybudget" placeholder='งบประมาณ*' name="budget" onChange={handleChange}>
+                            <select id="mybudget" placeholder='งบประมาณ' name="budget" onChange={handleChange}>
                                 <option value="0">งบประมาณ*</option>
-                                <optgroup label="แบบบ้านเดี่ยว">
-                                    <option value="1">6-7 ล้านบาท</option>
-                                    <option value="2">7-8 ล้านบาท</option>
-                                    <option value="3">8-9 ล้านบาท</option>
-                                    <option value="4">9-10 ล้านบาท</option>
-                                    <option value="5">10-11 ล้านบาท</option>
-                                    <option value="6">11-12 ล้านบาท</option>
-                                    <option value="7">มากกว่า 12 ล้านบาท</option>
-                                </optgroup>
-                                <optgroup label="แบบบ้านแฝด,ทาวน์โฮม">
-                                    <option value="8">2-3 ล้านบาท</option>
-                                    <option value="9">3-4 ล้านบาท</option>
-                                    <option value="10">4-5 ล้านบาท</option>
-                                    <option value="11">5-6 ล้านบาท</option>
-                                    <option value="12">มากกว่า 6 ล้านบาท</option>
-                                </optgroup>
                             </select>
                         </div>
                     </div>

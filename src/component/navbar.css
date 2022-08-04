@@ -22,9 +22,9 @@
 }
 
 .phone a {
-    margin-top: 0.7vw;
+    margin-top: 0.8vw;
     color: #053d53;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-family: 'sukhumvit_setbold';
     text-decoration: none;
 }
@@ -61,13 +61,16 @@
         height: 10vw;
     }
     .phone img {
-        width: 5vw;
-        height: 5vw;
+        width: 4vw;
+        height: 4vw;
+        margin-top: 1.6vw;
+    
 
     }
-    .phone p {    
-        font-size: 3.5vw;
-        margin-top: 2.5vw;
+    .phone a {    
+        font-size: 3vw;
+        margin-top: 1.8vw;
+        margin-left: 1vw;
 
     }
 }
