@@ -47,7 +47,7 @@
     top: 5.5vw;
     font-family: 'sukhumvit_setbold';
     font-size: 1vw;
-    transition: top 500ms ease-in, left 500ms ease-in, font-size 500ms ease-in;
+    transition: top 500ms ease-in, left 500ms ease-in, font-size 500ms ease-in, color 500ms ease-in;
 }
   
   .form-input {
@@ -68,6 +68,7 @@
   top: 4vw;
   font-size: 0.8vw;
   left: 3vw;
+  color: rgb(184, 184, 184);
 }
 
 
