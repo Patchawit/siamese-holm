@@ -7,8 +7,8 @@
     $budget = $_POST['budget'];
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "siameseregis"; //root
+$password = "Jj0_lp646";   //""
 $dbname = "siameseregis";
 
 // Create connection
