@@ -2,44 +2,58 @@ import './formregis.css';
 import bg from "../img/BG.png";
 import { useEffect, useState } from 'react';
 import Axios from 'axios'
+import $ from "jquery" ;
 
 
 
 
 export default function Formregis() {
 
-    const [registerList, setregisterList] = useState([])
+    // const [registerList, setregisterList] = useState([])
+    const [result, setResult] = useState("");
 
     const [firstName, setfisrtName] = useState("");
     const [surName, setsurName] = useState("");
-    const [number, setNumber] = useState("");
+    const [numberp, setNumberp] = useState("");
     const [email, setEmail] = useState("");
     const [design, setDesign] = useState("");
     const [budget, setBudget] = useState("");
 
-
-    const addRegis = () => {
-        Axios.post("http://localhost:3001/addregister", {
-            firstName: firstName,
-            surName: surName,
-            number: number,
-            email: email,
-            design: design,
-            budget: budget
-        }).then(() => {
-            setregisterList([
-                ...registerList,
-                {
-                    firstName: firstName,
-                    surName: surName,
-                    number: number,
-                    email: email,
-                    design: design,
-                    budget: budget
-                },
-            ]);
+    const handleSumbit = (e) => {
+        e.preventDefault();
+        const form = $(e.target);
+        $.ajax({
+            type: "POST",
+            url: form.attr("action"),
+            data: form.serialize(),
+            success(data) {
+                setResult(data);
+            },
         });
+        window.location.reload(false)
     };
+    // const addRegis = () => {
+    //     Axios.post("http://localhost:3001/addregister", {
+    //         firstName: firstName,
+    //         surName: surName,
+    //         number: number,
+    //         email: email,
+    //         design: design,
+    //         budget: budget
+    //     }).then(() => {
+    //         setregisterList([
+    //             ...registerList,
+    //             {
+    //                 firstName: firstName,
+    //                 surName: surName,
+    //                 number: number,
+    //                 email: email,
+    //                 design: design,
+    //                 budget: budget
+    //             },
+    //         ]);
+    //     });
+    // };
 
 
 
@@ -78,7 +92,9 @@ export default function Formregis() {
             <img src={bg} />
             <p>เตรียมพบบ้านเดี่ยว-ทาวน์โฮม โครงการใหม่<br />ติดถนนใหญ่ใกล้รถไฟฟ้า และฟิวเจอร์พาร์ครังสิต เพียง 4 นาที</p>
             <h1>ลงทะเบียนเพื่อรับสิทธิพิเศษ</h1>
-            <form>
+            <form  action="http://localhost:8000/server.php"
+                method="post"
+                onSubmit={(event) => handleSumbit(event)}>
                 <div className='container-fluid' style={{ width: "75vw" }}>
                     <div className="row textinput">
                         <div className="col-sm-6 col-12">
@@ -112,9 +128,9 @@ export default function Formregis() {
                             <div class="form-group">
                                 <input className='form-input' placeholder=' ' autoComplete='off' required
                                     type="text"
-                                    name="number"
+                                    name="numberp"
                                     onChange={(event) => {
-                                        setNumber(event.target.value)
+                                        setNumberp(event.target.value)
                                     }}>
                                 </input>
                                 <label className='form-label'>เบอร์โทรศัพท์*</label>
@@ -158,9 +174,8 @@ export default function Formregis() {
                         </div>
                     </div>
                 </div>
-                <button type="submit" onClick={addRegis}>ลงทะเบียน</button>
+                <button type="submit">ลงทะเบียน</button>
             </form>
-
         </div>
     )
 }
