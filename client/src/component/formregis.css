@@ -27,7 +27,7 @@
 
 .regis button{
     color: white;
-    background-color: #053d53 ;
+    background-color: #044154 ;
     margin-top: 5vw;
     margin-bottom: 5vw;
     padding: 0.5vw 3vw;
@@ -57,9 +57,9 @@
     width: 30vw;
     font-size: 1vw;
     border: 0;
-    border-bottom: 0.13vw solid #053d53;
+    border-bottom: 0.13vw solid #044154;
     margin-top:5vw;
-    color: #053d53;
+    color: #044154;
     font-family: 'sukhumvit_setbold';
     background-color: rgba(255, 255, 255, 0);
   }
@@ -76,10 +76,10 @@
     width: 30vw;
     font-size: 1vw;
     border: 0;
-    border-bottom: 0.13vw solid #053d53;
+    border-bottom: 0.13vw solid #044154;
     margin-top:6vw;
     background-color: rgba(255, 255, 255, 0);
-    color: #053d53;
+    color: #044154;
     outline: 0;
     font-family: 'sukhumvit_setbold';
 }
@@ -122,7 +122,7 @@
 
     }
     .regis img{
-        top: 49.1vw;    
+        top: 218.5vw;    
     }
 }
 

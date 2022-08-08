@@ -23,13 +23,14 @@
 
 .phone a {
     margin-top: 0.8vw;
-    color: #053d53;
+    color: #044154;
     font-size: 1.4vw;
     font-family: 'sukhumvit_setbold';
     text-decoration: none;
 }
-.phone a:hover{
-    color: #053d53;
+
+.phone a:hover {
+    color: #044154;
 }
 
 .banner {
@@ -39,6 +40,10 @@
     animation: fadeInAnimation ease 4s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+}
+
+.banner-mb {
+    display: none;
 }
 
 @keyframes fadeInAnimation {
@@ -51,26 +56,53 @@
     }
 }
 
-@media only screen and (max-width: 575px){
+@media only screen and (max-width: 575px) {
     .headbar {
         height: 10vw;
-        
+
     }
+
     .headbar img {
         width: 30vw;
         height: 10vw;
     }
+
     .phone img {
         width: 4vw;
         height: 4vw;
         margin-top: 1.6vw;
-    
+
 
     }
-    .phone a {    
+
+    .phone a {
         font-size: 3vw;
         margin-top: 1.8vw;
         margin-left: 1vw;
 
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .banner-mb {
+        display: block;
+        width: 100vw;
+        height: auto;
+        margin-bottom: 4vw;
+        animation: fadeInAnimation ease 4s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 }

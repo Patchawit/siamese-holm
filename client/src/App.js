@@ -1,16 +1,20 @@
 import './App.css';
-import Navbar from "./component/navbar"
-import Formregis from './component/formregis';
-import Contact from './component/contact';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from "./home"
+import Thankyou from './component/thankyou';
+
 
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Formregis />
-      <Contact/>
-      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/thankyou" element={<Thankyou />} />
+        </Routes>
+      </BrowserRouter>
+
 
     </>
   );
