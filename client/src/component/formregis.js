@@ -31,6 +31,8 @@ export default function Formregis() {
             },
         });
     };
+
+    
     // const addRegis = () => {
     //     Axios.post("http://localhost:3001/addregister", {
     //         firstName: firstName,
@@ -71,7 +73,7 @@ export default function Formregis() {
         var topicSel = document.getElementById("mybudget");
         for (var x in subjectObject) {
             subjectSel.options[subjectSel.options.length] = new Option(x, x);
-            console.log("1")
+
         }
 
         subjectSel.onchange = function () {
