@@ -30,7 +30,6 @@ export default function Formregis() {
                 setResult(data);
             },
         });
-        window.location.reload(false)
     };
     // const addRegis = () => {
     //     Axios.post("http://localhost:3001/addregister", {
