@@ -19,7 +19,7 @@
 //         loadData();
 //     }, [])
 
-
+   
 
 //     return (
 //         <div>
@@ -31,7 +31,6 @@
 //     )
 // }
 
-
 import { useEffect, useState } from 'react';
 import Axios from 'axios'
 import $ from "jquery";
@@ -42,8 +41,7 @@ import { Link } from 'react-router-dom';
 export default function Formregis() {
 
     // const [registerList, setregisterList] = useState([])
-    // const [result, setResult] = useState("");
-
+    const [result, setResult] = useState("");
 
     const [firstName, setfisrtName] = useState("");
     const [surName, setsurName] = useState("");
@@ -52,41 +50,21 @@ export default function Formregis() {
     const [design, setDesign] = useState("");
     const [budget, setBudget] = useState("");
 
-    // const handleSumbit = (e) => {
-    //     e.preventDefault();
-    //     const form = $(e.target);
-    //     $.ajax({
-    //         type: "POST",
-    //         url: form.attr("action"),
-    //         data: form.serialize(),
-    //         success(data) {
-    //             setResult(data);
-    //         },
-    //     });
-    //     // window.location.href="/#/thankyou"; 
-    //     console.log("success")
-    // };
-
-    let handleSubmit = async (e) => {
+    const handleSumbit = (e) => {
         e.preventDefault();
-        try {
-            let res = await fetch("https://digitivework.com/project/siamese/PHP/index.php", {
-                method: "POST",
-                body: JSON.stringify({
-                    firstName: firstName,
-                    surName: surName,
-                    numberp: numberp,
-                    email: email,
-                    design: design,
-                    budget: budget
-                }),
-            });
-        } catch (err) {
-            console.log(err);
-        }
-        console.log(firstName, surName)
+        const form = $(e.target);
+        $.ajax({
+            type: "POST",
+            url: form.attr("action"),
+            data: form.serialize(),
+            success(data) {
+                setResult(data);
+            },
+        });
+        // window.location.href="/#/thankyou"; 
     };
 
+    
     // const addRegis = () => {
     //     Axios.post("http://localhost:3001/addregister", {
     //         firstName: firstName,
@@ -144,12 +122,12 @@ export default function Formregis() {
 
     return (
         <div className='regis'>
-
+            
             <p>เตรียมพบบ้านเดี่ยว-ทาวน์โฮม โครงการใหม่<br />ติดถนนใหญ่ใกล้รถไฟฟ้า และฟิวเจอร์พาร์ครังสิต เพียง 4 นาที</p>
             <h1>ลงทะเบียนเพื่อรับสิทธิพิเศษ</h1>
-            <form  //http://localhost:8000/server.php
-                
-                onSubmit={(event) => handleSubmit(event)}>
+            <form action="https://digitivework.com/project/siamese/PHP/index.php" //http://localhost:8000/server.php
+                method="post"
+                onSubmit={(event) => handleSumbit(event)}>
                 <div className='container-fluid' style={{ width: "75vw" }}>
                     <div className="row textinput">
                         <div className="col-sm-6 col-12">
@@ -230,7 +208,7 @@ export default function Formregis() {
                     </div>
                 </div>
                 {/* <Link to="/thankyou"> */}
-                <button type="submit">ลงทะเบียน</button>
+                    <button type="submit">ลงทะเบียน</button>
                 {/* </Link> */}
             </form>
         </div>
