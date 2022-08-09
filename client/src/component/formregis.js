@@ -30,6 +30,7 @@ export default function Formregis() {
                 setResult(data);
             },
         });
+        window.location.href="/#/thankyou"; 
     };
 
     
@@ -155,29 +156,29 @@ export default function Formregis() {
                 <div className='container-fluid' style={{ width: "75vw" }}>
                     <div className="row opinput">
                         <div className="col-sm-6 col-12">
-                            <select id="mydesign"
+                            <select id="mydesign" required
                                 name="design"
                                 onChange={(event) => {
                                     setDesign(event.target.value)
                                 }}>
-                                <option value="0">แบบบ้านที่สนใจ*</option>
+                                <option value="">แบบบ้านที่สนใจ*</option>
                             </select>
 
                         </div>
                         <div className="col-sm-6 col-12">
-                            <select id="mybudget"
+                            <select id="mybudget" required
                                 name="budget"
                                 onChange={(event) => {
                                     setBudget(event.target.value)
                                 }}>
-                                <option value="0">งบประมาณ*</option>
+                                <option value="">งบประมาณ*</option>
                             </select>
                         </div>
                     </div>
                 </div>
-                <Link to="/thankyou">
+                {/* <Link to="/thankyou"> */}
                     <button type="submit">ลงทะเบียน</button>
-                </Link>
+                {/* </Link> */}
             </form>
         </div>
     )
