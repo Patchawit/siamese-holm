@@ -43,16 +43,17 @@
 
 .btnback {
     text-align: center;
-    color: #044154;
-    font-size: 1.2vw;
-    border: 0.2vw solid white;
-    background-color: white;
-    padding: 1vw 1.5vw;
+    color: white;
+    font-size: 1.5vw;
+    border: 0.1vw solid white;
+    background-color: #044154;
+    padding: 1vw 4vw;
+    letter-spacing: 0.1vw;
     z-index: 2;
     text-decoration: none;    
 }
 .btnback:hover{
-    color: #044154;
+    color: white;
 }
 
 
@@ -82,9 +83,10 @@
     }
 
     .btnback {     
-        font-size: 2.5vw;
+        font-size: 3.5vw;
         border: 0.1vw solid white;
-        padding: 1.5vw 2vw;
+        padding: 1.5vw 6vw;
+        letter-spacing: 0.2vw;
     }
     
 }
