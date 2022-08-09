@@ -31,5 +31,51 @@ if ($conn->query($sql) === TRUE) {
   
   $conn->close();
 
+//--------------------------------------------
+$data_array =  array(
+  "oid"=> "00D6F0000027leq",
+    "lead_source"=> "Web Registration",
+    "_00N0k000001DWVa"=> "1",
+    "retURL"=> "https://siameseholm.com/",
+    "Project_Code"=> "00089",
+    "Need_Auto_Assignment"=> "1",
+    "Salutation"=> "คุณ",
+    "Other_Salutation"=> "",
+    "first_name"=> $firstName,
+    "last_name"=> $surName,
+    "Gender"=> "",
+    "company"=> "",
+    "email"=> $email,
+    "mobile"=> $numberp,
+    "country"=> "",
+    "Province"=> "",
+    "District"=> "",
+    "Sub_District"=> "",
+    "Nationality"=> "Thai",
+    "Other_Nationality"=> "",
+    "phone"=> $numberp,
+    "Budget"=> "",
+    "SizeOfCondo"=> "",
+    "Townhome"=> "",
+    "LineId"=> "",
+    "Message"=> "",
+    "AddressInThai"=> "1",
+    "Purpose"=> "Living",
+    "Newsletter"=> "1"
+);
+
+$ch = curl_init('https://app.siameseasset.co.th/salesforceapi/api/ServiceApi');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data_array);
+
+// execute!
+$response = curl_exec($ch);
+
+// close the connection, release resources used
+curl_close($ch);
+
+// do anything you want with your response
+var_dump($response);
+
 
 ?>
