@@ -32,6 +32,7 @@ export default function Formregis() {
             
         });
         window.location.href = "/#/thankyou";
+        console.log(design)
     };
     
 
@@ -151,7 +152,7 @@ export default function Formregis() {
                         <div className="col-sm-6 col-12">
                             <div class="form-group">
                                 <input className='form-input' placeholder=' ' autoComplete='off' required
-                                    type="text"
+                                    type="number"
                                     name="numberp"
                                     onChange={(event) => {
                                         setNumberp(event.target.value)
@@ -163,7 +164,7 @@ export default function Formregis() {
                         <div className="col-sm-6 col-12">
                             <div class="form-group">
                                 <input className='form-input' placeholder=' ' autoComplete='off'
-                                    type="text"
+                                    type="email"
                                     name="email"
                                     onChange={(event) => {
                                         setEmail(event.target.value)
@@ -190,8 +191,8 @@ export default function Formregis() {
                                     setDesign(event.target.options[event.target.selectedIndex].text)
                                 }}>
                                 <option value="">แบบบ้านที่สนใจ</option>
-                                <option value="0089" rel="home">บ้านเดี่ยว</option>
-                                <option value="0090" rel="house">บ้านแฝด-ทาวน์โฮม</option>
+                                <option value="00089" rel="home">บ้านเดี่ยว</option>
+                                <option value="00090" rel="house">บ้านแฝด-ทาวน์โฮม</option>
                             </select>
 
 
