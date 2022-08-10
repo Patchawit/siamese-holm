@@ -32,6 +32,7 @@ if ($conn->query($sql) === TRUE) {
   $conn->close();
 
 //---------------------API-----------------------
+
 $data_array =  array(
   "oid"=> "00D6F0000027leq",
     "lead_source"=> "Web Registration",
@@ -64,18 +65,26 @@ $data_array =  array(
     "Newsletter"=> "1"
 );
 
-$ch = curl_init('https://app.siameseasset.co.th/salesforceapi/api/ServiceApi');
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $data_array);
+$payload = json_encode($data_array);
 
-// execute!
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, "https://app.siameseasset.co.th/salesforceapi/api/ServiceApi");
+
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+curl_setopt($ch, CURLOPT_POST, true);
+
+curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
+
+
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+  'Content-Type: application/json',
+  'Content-Length: ' . strlen($payload))
+);
+
 $response = curl_exec($ch);
 
-// close the connection, release resources used
 curl_close($ch);
-
-// do anything you want with your response
-var_dump($response);
 
 
 ?>
