@@ -30,10 +30,10 @@ export default function Formregis() {
                 setResult(data);
             },
         });
-        window.location.href="/#/thankyou"; 
+        window.location.href = "/#/thankyou";
     };
 
-    
+
     // const addRegis = () => {
     //     Axios.post("http://localhost:3001/addregister", {
     //         firstName: firstName,
@@ -60,33 +60,53 @@ export default function Formregis() {
 
 
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        var subjectObject = {
-            "แบบบ้านที่สนใจ*": [],
-            "บ้านเดี่ยว": ["6-7 ล้านบาท", "7-8 ล้านบาท", "8-9 ล้านบาท", "9-10 ล้านบาท", "10-11 ล้านบาท", "11-12 ล้านบาท", "มากกว่า 12 ล้านบาท"],
-            "บ้านแฝด": ["2-3 ล้านบาท", "3-4 ล้านบาท", "4-5 ล้านบาท", "5-6 ล้านบาท", "มากกว่า 6 ล้านบาท"],
-            "ทาวน์โฮม": ["2-3 ล้านบาท", "3-4 ล้านบาท", "4-5 ล้านบาท", "5-6 ล้านบาท", "มากกว่า 6 ล้านบาท"]
-        }
-        document.querySelector('#mydesign').innerHTML = '';
+    //     var subjectObject = {
+    //         "แบบบ้านที่สนใจ*": [],
+    //         "บ้านเดี่ยว": ["6-7 ล้านบาท", "7-8 ล้านบาท", "8-9 ล้านบาท", "9-10 ล้านบาท", "10-11 ล้านบาท", "11-12 ล้านบาท", "มากกว่า 12 ล้านบาท"],
+    //         "บ้านแฝด": ["2-3 ล้านบาท", "3-4 ล้านบาท", "4-5 ล้านบาท", "5-6 ล้านบาท", "มากกว่า 6 ล้านบาท"],
+    //         "ทาวน์โฮม": ["2-3 ล้านบาท", "3-4 ล้านบาท", "4-5 ล้านบาท", "5-6 ล้านบาท", "มากกว่า 6 ล้านบาท"]
+    //     }
+    //     document.querySelector('#mydesign').innerHTML = '';
 
-        var subjectSel = document.getElementById("mydesign");
-        var topicSel = document.getElementById("mybudget");
-        for (var x in subjectObject) {
-            subjectSel.options[subjectSel.options.length] = new Option(x, x);
+    //     var subjectSel = document.getElementById("mydesign");
+    //     var topicSel = document.getElementById("mybudget");
+    //     for (var x in subjectObject) {
+    //         subjectSel.options[subjectSel.options.length] = new Option(x, x);
 
-        }
+    //     }
 
-        subjectSel.onchange = function () {
-            topicSel.length = 1;
+    //     subjectSel.onchange = function () {
+    //         topicSel.length = 1;
 
-            for (var y in subjectObject[this.value]) {
-                topicSel.options[topicSel.options.length] = new Option(subjectObject[this.value][y], subjectObject[this.value][y]);
-            }
-        }
+    //         for (var y in subjectObject[this.value]) {
+    //             topicSel.options[topicSel.options.length] = new Option(subjectObject[this.value][y], subjectObject[this.value][y]);
+    //         }
+    //     }
 
 
-    }, [])
+    // }, [])
+
+    $(document).ready(function(){
+        var $des = $('select[name=mydesign]'),
+            $bud = $('select[name=mybudget]');
+    
+        $des.change(function(){
+            var $this = $(this).find(':selected'),
+                rel = $this.attr('rel'),
+                $set = $bud.find('option.' + rel);
+            
+            /* if ($set.size() < 0) {
+                $items.hide();
+                return;
+            } */
+            
+            $bud.show().find('option').hide();
+            
+            $set.show().first().prop('selected', true);
+        });
+    });
 
 
     return (
@@ -156,28 +176,58 @@ export default function Formregis() {
                 <div className='container-fluid' style={{ width: "75vw" }}>
                     <div className="row opinput">
                         <div className="col-sm-6 col-12">
-                            <select id="mydesign" required
+                            {/* <select id="mydesign" required
                                 name="design"
                                 onChange={(event) => {
                                     setDesign(event.target.value)
                                 }}>
                                 <option value="">แบบบ้านที่สนใจ*</option>
+                            </select> */}
+                            <select name="mydesign" required
+                                onChange={(event) => {
+                                    setDesign(event.target.value)
+                                }}>
+                                <option value="">แบบบ้านที่สนใจ</option>
+                                <option value="0089" rel="home">บ้านเดี่ยว</option>
+                                <option value="0090" rel="house">บ้านแฝด-ทาวน์โฮม</option>
                             </select>
+
 
                         </div>
                         <div className="col-sm-6 col-12">
-                            <select id="mybudget" required
+                            {/* <select id="mybudget" required
                                 name="budget"
                                 onChange={(event) => {
                                     setBudget(event.target.value)
                                 }}>
                                 <option value="">งบประมาณ*</option>
+                            </select> */}
+                            <select name="mybudget" required
+                                onChange={(event) => {
+                                    setBudget(event.target.value)
+                                }}>
+                                <option value="" class="home">งบประมาณ</option>
+                                <option value="6 - 7 MB." class="home">6-7 ล้านบาท</option>
+                                <option value="7 - 8 MB." class="home">7-8 ล้านบาท</option>
+                                <option value="8 - 9 MB." class="home">8-9 ล้านบาท</option>
+                                <option value="9 - 10 MB." class="home">9-10 ล้านบาท</option>
+                                <option value="10 - 11 MB." class="home">10-11 ล้านบาท</option>
+                                <option value="11 - 12 MB." class="home">11-12 ล้านบาท</option>
+                                <option value="More than 12 MB." class="home">มากกว่า 12 ล้านบาท</option>
+                                <option value="" class="house">งบประมาณ</option>
+                                <option value="2 - 3 MB." class="house">2-3 ล้านบาท</option>
+                                <option value="3 - 4 MB." class="house">3-4 ล้านบาท</option>
+                                <option value="4 - 5 MB." class="house">4-5 ล้านบาท</option>
+                                <option value="5 - 6 MB." class="house">5-6 ล้านบาท</option>
+                                <option value="More than 6 MB." class="house">มากกว่า 6 ล้านบาท</option>
+
                             </select>
+
                         </div>
                     </div>
                 </div>
                 {/* <Link to="/thankyou"> */}
-                    <button type="submit">ลงทะเบียน</button>
+                <button type="submit">ลงทะเบียน</button>
                 {/* </Link> */}
             </form>
         </div>
