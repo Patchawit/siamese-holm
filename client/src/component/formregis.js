@@ -29,9 +29,11 @@ export default function Formregis() {
             success(data) {
                 setResult(data);
             },
+            
         });
         window.location.href = "/#/thankyou";
     };
+    
 
 
     // const addRegis = () => {
@@ -89,8 +91,8 @@ export default function Formregis() {
     // }, [])
 
     $(document).ready(function(){
-        var $des = $('select[name=mydesign]'),
-            $bud = $('select[name=mybudget]');
+        var $des = $('select[name=design]'),
+            $bud = $('select[name=budget]');
     
         $des.change(function(){
             var $this = $(this).find(':selected'),
@@ -183,9 +185,9 @@ export default function Formregis() {
                                 }}>
                                 <option value="">แบบบ้านที่สนใจ*</option>
                             </select> */}
-                            <select name="mydesign" required
+                            <select name="design" required
                                 onChange={(event) => {
-                                    setDesign(event.target.value)
+                                    setDesign(event.target.options[event.target.selectedIndex].text)
                                 }}>
                                 <option value="">แบบบ้านที่สนใจ</option>
                                 <option value="0089" rel="home">บ้านเดี่ยว</option>
@@ -202,7 +204,7 @@ export default function Formregis() {
                                 }}>
                                 <option value="">งบประมาณ*</option>
                             </select> */}
-                            <select name="mybudget" required
+                            <select name="budget" required
                                 onChange={(event) => {
                                     setBudget(event.target.value)
                                 }}>
