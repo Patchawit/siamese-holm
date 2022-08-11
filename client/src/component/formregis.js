@@ -32,7 +32,7 @@ export default function Formregis() {
             
         });
         window.location.href = "/#/thankyou";
-        console.log(design)
+    
     };
     
 
@@ -190,7 +190,7 @@ export default function Formregis() {
                                 onChange={(event) => {
                                     setDesign(event.target.options[event.target.selectedIndex].text)
                                 }}>
-                                <option value="">แบบบ้านที่สนใจ</option>
+                                <option value="">แบบบ้านที่สนใจ*</option>
                                 <option value="00089" rel="home">บ้านเดี่ยว</option>
                                 <option value="00090" rel="house">บ้านแฝด-ทาวน์โฮม</option>
                             </select>
@@ -205,11 +205,11 @@ export default function Formregis() {
                                 }}>
                                 <option value="">งบประมาณ*</option>
                             </select> */}
-                            <select name="budget" required
+                            <select name="budget" required 
                                 onChange={(event) => {
                                     setBudget(event.target.value)
                                 }}>
-                                <option value="" class="home">งบประมาณ</option>
+                                <option value="" class="home">งบประมาณ*</option>
                                 <option value="6 - 7 MB." class="home">6-7 ล้านบาท</option>
                                 <option value="7 - 8 MB." class="home">7-8 ล้านบาท</option>
                                 <option value="8 - 9 MB." class="home">8-9 ล้านบาท</option>
@@ -217,7 +217,7 @@ export default function Formregis() {
                                 <option value="10 - 11 MB." class="home">10-11 ล้านบาท</option>
                                 <option value="11 - 12 MB." class="home">11-12 ล้านบาท</option>
                                 <option value="More than 12 MB." class="home">มากกว่า 12 ล้านบาท</option>
-                                <option value="" class="house">งบประมาณ</option>
+                                <option value="" class="house">งบประมาณ*</option>
                                 <option value="2 - 3 MB." class="house">2-3 ล้านบาท</option>
                                 <option value="3 - 4 MB." class="house">3-4 ล้านบาท</option>
                                 <option value="4 - 5 MB." class="house">4-5 ล้านบาท</option>

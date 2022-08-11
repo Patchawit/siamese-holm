@@ -89,12 +89,12 @@
 @media only screen and (max-width: 575px){
     .opinput select{
         width: 70vw;
-        font-size: 1.7vw;      
+        font-size: 1.9vw;      
     }
     .form-label {
         left: 1vw;
         top: 5.5vw;
-        font-size: 1.7vw;
+        font-size: 1.9vw;
     }
     .form-input{
         width: 70vw;
