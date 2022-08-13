@@ -100,6 +100,8 @@ export default function Formregis() {
                 rel = $this.attr('rel'),
                 $set = $bud.find('option.' + rel);
             
+            document.getElementById('budget').disabled = false;
+        
             /* if ($set.size() < 0) {
                 $items.hide();
                 return;
@@ -108,6 +110,7 @@ export default function Formregis() {
             $bud.show().find('option').hide();
             
             $set.show().first().prop('selected', true);
+
         });
     });
 
@@ -186,7 +189,7 @@ export default function Formregis() {
                                 }}>
                                 <option value="">แบบบ้านที่สนใจ*</option>
                             </select> */}
-                            <select name="design" required
+                            <select name="design" required 
                                 onChange={(event) => {
                                     setDesign(event.target.options[event.target.selectedIndex].text)
                                 }}>
@@ -205,7 +208,7 @@ export default function Formregis() {
                                 }}>
                                 <option value="">งบประมาณ*</option>
                             </select> */}
-                            <select name="budget" required 
+                            <select name="budget" required disabled id="budget"
                                 onChange={(event) => {
                                     setBudget(event.target.value)
                                 }}>
