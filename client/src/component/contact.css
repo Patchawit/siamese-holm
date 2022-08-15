@@ -31,6 +31,7 @@
 .desc p {
     font-size: 1vw;
     margin-bottom: 2vw;
+    padding-right: 2vw;
     font-family: 'sukhumvit_setbold';
 }
 
@@ -119,14 +120,16 @@
 
 @media only screen and (max-width: 575px) {
     .info {
-        padding-left: 4vw;
         padding-bottom: 9vw;
     }
-
+    .map{
+        display: flex;
+        justify-content: center;
+    }
     .map iframe {
-        margin-left: -8.75vw;
+        margin-left: 0.5vw;
         margin-top: 2vw;
-        width: 90vw;
+        width: 100vw;
         height: 60vw;
         margin-bottom: 3vw;
     }
@@ -145,16 +148,18 @@
     }
 
     .desc h1 {
-        font-size: 4vw;
+        font-size: 5.3vw;
         padding-bottom: 1vw;
     }
 
     .desc p {
-        font-size: 2.3vw;
+        font-size: 3.7vw;
+        padding-right: 5vw;
+       
     }
 
     .desc li {
-        font-size: 2.15vw;
+        font-size: 3vw;
     }
 
     .desc ul {

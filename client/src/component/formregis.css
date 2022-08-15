@@ -89,16 +89,18 @@
 @media only screen and (max-width: 575px){
     .opinput select{
         width: 70vw;
-        font-size: 1.9vw;      
+        font-size: 3.5vw;      
     }
     .form-label {
         left: 1vw;
-        top: 5.5vw;
-        font-size: 1.9vw;
+        top: 3.5vw;
+        font-size: 3.5vw;
+        
     }
     .form-input{
         width: 70vw;
         font-size: 1.5vw;
+        margin-bottom: 3vw;
     }
     .form-input:focus ~ .form-label,
     .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
