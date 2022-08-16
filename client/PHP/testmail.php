@@ -9,6 +9,7 @@
 
 ini_set( 'display_errors', 1 );
 error_reporting( E_ALL );
+// $from = "";
 $to = $email; 
 $subject = "Checking PHP mail";
 $message = "ชื่อ: $firstName นามสกุล: $surName เบอร์โทรศัพท์: $numberp อีเมล: $email แบบบ้านที่สนใจ: $design งบประมาณ: $budget";
