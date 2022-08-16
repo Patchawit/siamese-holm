@@ -14,10 +14,6 @@ $to = $email;
 $subject = "Checking PHP mail";
 $message = "ชื่อ: $firstName นามสกุล: $surName เบอร์โทรศัพท์: $numberp อีเมล: $email แบบบ้านที่สนใจ: $design งบประมาณ: $budget";
 // $headers = "From:" . $from;
-if(mail($to, $subject, $message)) {
-    echo "The email message was sent.";
-} else {
-    echo "The email message was not sent.";
-}
+mail($to, $subject, $message);
 
 ?> 
