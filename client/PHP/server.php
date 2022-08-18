@@ -86,4 +86,17 @@ $response = curl_exec($ch);
 curl_close($ch);
 
 
+//---------------------Email-----------------------
+$from = "gcp@digitiveworks.com";
+$to = $email; 
+$subject = "แจ้งเตือนการลงทะเบียนผ่านเว็บไซต์ Siameseholm.com";
+$message = "แจ้งเตือนการลงทะเบียนข้อมูลผู้สนใจผ่านเว็บไซต์ Siameseholm.com โดยมีรายละเอียดดังนี้
+            ชื่อ: $firstName 
+            นามสกุล: $surName 
+            เบอร์โทรศัพท์: $numberp 
+            อีเมล: $email 
+            แบบบ้านที่สนใจ: $design 
+            งบประมาณ: $budget";
+$headers = "From:" . $from;
+mail($to, $subject, $message, $headers);
 ?>
