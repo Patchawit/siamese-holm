@@ -88,7 +88,7 @@ curl_close($ch);
 
 //---------------------Email-----------------------
 $from = "gcp@digitiveworks.com";
-$to = $email; 
+$to = "oraya@siameseasset.co.th, benyapa@siameseasset.co.th, narongphan@siameseasset.co.th, Naruamon.r@siameseasset.co.th, chatorn@siameseasset.co.th"; 
 $subject = "แจ้งเตือนการลงทะเบียนผ่านเว็บไซต์ Siameseholm.com";
 $message = "แจ้งเตือนการลงทะเบียนข้อมูลผู้สนใจผ่านเว็บไซต์ Siameseholm.com โดยมีรายละเอียดดังนี้
             ชื่อ: $firstName 
