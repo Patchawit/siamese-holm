@@ -232,6 +232,9 @@ export default function Formregis() {
                         </div>
                     </div>
                 </div>
+                <div className='policy'>
+                <p>ท่านได้อ่านและทำความเข้าใจ และรับทราบถึงเนื้อหาของประกาศความเป็นส่วนตัวของบริษัท ดังปรากฏรายละเอียดที่  <a href='https://web.siameseasset.co.th/exclusive/policy_th.php' target="_blank">นโยบายความเป็นส่วนตัว</a> เรียบร้อยแล้ว</p>
+                </div>
                 {/* <Link to="/thankyou"> */}
                 <button type="submit">ลงทะเบียน</button>
                 {/* </Link> */}

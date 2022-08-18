@@ -15,8 +15,12 @@
 .regis p{
     font-size: 1.7vw;
     font-family: 'sukhumvit_setbold';
-    margin-bottom: 4vw;
-    
+    margin-bottom: 4vw;   
+}
+.policy p{
+    font-size: 0.9vw;
+    margin-top: 4vw;
+    margin-bottom: 0vw;
 }
 
 .regis h1{
