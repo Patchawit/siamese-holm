@@ -120,7 +120,7 @@ export default function Formregis() {
             <img src={bg} />
             <p>เตรียมพบบ้านเดี่ยว-ทาวน์โฮม โครงการใหม่<br />ติดถนนใหญ่ใกล้รถไฟฟ้า และฟิวเจอร์พาร์ครังสิต เพียง 4 นาที</p>
             <h1>ลงทะเบียนเพื่อรับสิทธิพิเศษ</h1>
-            <form action="https://siameseholm.com/php/server.php"  //http://localhost:8000/server.php //http://localhost:3000/client/PHP/testmail.php
+            <form action="http://localhost:8000/client/php/testmail.php"  //http://localhost:8000/server.php //https://siameseholm.com/php/server.php
                 method="post"
                 onSubmit={(event) => handleSumbit(event)}>
                 <div className='container-fluid' style={{ width: "75vw" }}>
