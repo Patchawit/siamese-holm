@@ -87,20 +87,20 @@ curl_close($ch);
 
 
 //---------------------Email-----------------------
-$to = "oraya@siameseasset.co.th, benyapa@siameseasset.co.th, narongphan@siameseasset.co.th, Naruamon.r@siameseasset.co.th, chatorn@siameseasset.co.th"; 
+$to = "oraya@siameseasset.co.th, benyapa@siameseasset.co.th, narongphan@siameseasset.co.th, Naruamon.r@siameseasset.co.th, chatorn@siameseasset.co.th, phison@digitiveworks.com"; 
 $subject = "=?UTF-8?B?".base64_encode("แจ้งเตือนการลงทะเบียนผ่านเว็บไซต์ Siameseholm.com")."?=";
 $headers = "MIME-Version: 1.0' . \r\n";
 $headers = "Content-type: text/html; charset=utf-8\r\n";
 $headers .= "From: gcp@digitiveworks.com\r\n";
 $headers .= "Reply-To: gcp@digitiveworks.com\r\n";
 $headers .= "X-Mailer: PHP/picoHosting";
-$message = "แจ้งเตือนการลงทะเบียนข้อมูลผู้สนใจผ่านเว็บไซต์ Siameseholm.com โดยมีรายละเอียดดังนี้\r\n";
-$message = "ชื่อ: $firstName\r\n";
-$message = "นามสกุล: $surName\r\n";
-$message = "เบอร์โทรศัพท์: $numberp\r\n";
-$message = "อีเมล: $email\r\n";
-$message = "แบบบ้านที่สนใจ: $design\r\n";
-$message = "งบประมาณ: $budget\r\n";
+$message = "แจ้งเตือนการลงทะเบียนข้อมูลผู้สนใจผ่านเว็บไซต์ Siameseholm.com โดยมีรายละเอียดดังนี้ <br/>
+            ชื่อ: $firstName <br/>
+            นามสกุล: $surName <br/>
+            เบอร์โทรศัพท์: $numberp <br/>
+            อีเมล: $email <br/>
+            แบบบ้านที่สนใจ: $design <br/>
+            งบประมาณ: $budget";
 mail($to, $subject, $message, $headers);
 
 

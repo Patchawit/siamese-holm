@@ -8,9 +8,29 @@
     $budget = $_POST['budget'];
 
 
-$from = "gcp@digitiveworks.com";
-$to = $email; 
-$subject = "แจ้งเตือนการลงทะเบียนผ่านเว็บไซต์ Siameseholm.com";
+// $from = "gcp@digitiveworks.com";
+// $to = "kadaj_max@windowslive.com, patchawit@digitiveworks.com"; 
+// $subject = "แจ้งเตือนการลงทะเบียนผ่านเว็บไซต์ Siameseholm.com";
+// $message = "แจ้งเตือนการลงทะเบียนข้อมูลผู้สนใจผ่านเว็บไซต์ Siameseholm.com โดยมีรายละเอียดดังนี้ <br/>
+//             ชื่อ: $firstName <br/>
+//             นามสกุล: $surName <br/>
+//             เบอร์โทรศัพท์: $numberp <br/>
+//             อีเมล: $email <br/>
+//             แบบบ้านที่สนใจ: $design <br/>
+//             งบประมาณ: $budget";
+// $headers = 'From: '.$from.'' . "\r\n" .
+// 'Content-type: text/html; charset=utf8' .
+// 'X-Mailer: PHP/' . phpversion();
+// mail($to, $subject, $message, $headers);
+
+
+$to = "patchawit@digitiveworks.com"; 
+$subject = "=?UTF-8?B?".base64_encode("แจ้งเตือนการลงทะเบียนผ่านเว็บไซต์ Siameseholm.com")."?=";
+$headers = "MIME-Version: 1.0' . \r\n";
+$headers = "Content-type: text/html; charset=utf-8\r\n";
+$headers .= "From: gcp@digitiveworks.com\r\n";
+$headers .= "Reply-To: gcp@digitiveworks.com\r\n";
+$headers .= "X-Mailer: PHP/picoHosting";
 $message = "แจ้งเตือนการลงทะเบียนข้อมูลผู้สนใจผ่านเว็บไซต์ Siameseholm.com โดยมีรายละเอียดดังนี้ <br/>
             ชื่อ: $firstName <br/>
             นามสกุล: $surName <br/>
@@ -18,10 +38,8 @@ $message = "แจ้งเตือนการลงทะเบียนข�
             อีเมล: $email <br/>
             แบบบ้านที่สนใจ: $design <br/>
             งบประมาณ: $budget";
-$headers = 'From: '.$from.'' . "\r\n" .
-'Content-type: text/html; charset=utf8' .
-'X-Mailer: PHP/' . phpversion();
 mail($to, $subject, $message, $headers);
+
 
 //     ini_set('display_errors', 1);
 //     ini_set('display_startup_errors', 1);
